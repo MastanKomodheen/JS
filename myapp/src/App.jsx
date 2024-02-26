@@ -1,4 +1,5 @@
 import React from "react"
+import Usestate from "./components/Usestate"
 function App() {
   const data =
   {
@@ -63,6 +64,7 @@ function App() {
   }
   return (
 
+   <>
     <table>
       <tr>
         <th>Company</th>
@@ -84,6 +86,8 @@ function App() {
 
 
     </table>
+    <Usestate/>
+   </>
   )
 }
 
