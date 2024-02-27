@@ -19,3 +19,16 @@
 // numbers.forEach((currentvalue)=>console.log(currentvalue))
 // numbers.forEach((index)=>console.log(index))
 
+
+//reduce
+// Defination:It is used to itarate the over elements of an array and perform a cumulative operation these elements,ultimately returning a single value;
+// parameters:accumlator,initialvalue
+
+// const num=[1,2,3,4,5,6,7,7,10]
+// const reducedata=num.reduce((accu,inialvalue)=>{
+//     return accu+inialvalue
+// })
+// console.log(reducedata)
+
+// filter
+// Defination:
