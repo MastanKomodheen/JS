@@ -33,7 +33,7 @@
 // filter
 // Defination:filter method is  used to filter of an array based on provided  condition.it creates the new array containing only the elelments
 // that pass the specified condition
-const arr=[1,2,3,4,5,6,7,8,9,10];
+// const arr=[1,2,3,4,5,6,7,8,9,10];
 // const arrayFilter=arr.filter(element=> {return element%2==0})
 // console.log(arrayFilter)
 // const arrfind=arr.includes(2)
@@ -59,5 +59,6 @@ const arr=[1,2,3,4,5,6,7,8,9,10];
 // }
 // console.log(fundElement)
 
-console.log(1<2<3)
-console.log(3>2>1)
+// console.log(1<2<3)
+// console.log(3>2>1)
+
