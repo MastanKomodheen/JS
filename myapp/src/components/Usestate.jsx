@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import UseEffect from './UseEffect';
+import CustomHooks from './CustomHooks';
 
 const Usestate = () => {
     const data = "Without Use state";
@@ -18,6 +19,7 @@ const Usestate = () => {
     }
     return (
         <div>
+            <CustomHooks/>
             <h1>useState</h1>
             <h2>{data}</h2>
             <h2>{userState}</h2>
