@@ -1,5 +1,5 @@
 //map function
-// Defination : A map method is higer-function used to iterate over elements of an array and create a array based on the result of applying a callback function
+// Defination : A map method is used to iterate over elements of an array and create a array based on the result of applying a callback function
 // each element in the original array.It does not change the original array but returns the new array with the same length as the original one,
 //where each element is the result of applying the provided function to the corresponding element of the original array.
 // Example:there are passing three parameters currentValue,index,array
@@ -31,4 +31,33 @@
 // console.log(reducedata)
 
 // filter
-// Defination:
+// Defination:filter method is  used to filter of an array based on provided  condition.it creates the new array containing only the elelments
+// that pass the specified condition
+const arr=[1,2,3,4,5,6,7,8,9,10];
+// const arrayFilter=arr.filter(element=> {return element%2==0})
+// console.log(arrayFilter)
+// const arrfind=arr.includes(2)
+// console.log(arrfind)
+// Using a for loop or forEach loop: You can iterate through the array and manually check each element.
+// let fundElement;
+// for(const element of arr){
+//     if(element==9){
+//         fundElement=element;
+//         break;
+//     }
+// }
+// console.log(fundElement)
+
+
+
+// let fundElement;
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]==9){
+//         fundElement=arr[i];
+//         break;
+//     }
+// }
+// console.log(fundElement)
+
+console.log(1<2<3)
+console.log(3>2>1)
