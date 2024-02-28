@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
+import UseEffect from './UseEffect';
 
 const Usestate = () => {
     const data = "Without Use state";
     const [userState, setUserState] = useState("")
-    const [buttonclick, setButtonClick] = useState(true)
+    const [buttonclick, setButtonclick] = useState(true)
     const userstatedata = () => {
         if (buttonclick) {
             setUserState(buttonclick ? "clicked user" : "")
             setUserState("button clicked")
-            setButtonClick(false)
+            setButtonclick(false)
         }
         else {
             setUserState("")
-            setButtonClick(true)
+            setButtonclick(true)
         }
     }
     return (
@@ -21,6 +22,7 @@ const Usestate = () => {
             <h2>{data}</h2>
             <h2>{userState}</h2>
             <button onClick={userstatedata}>{buttonclick ? "click me" : "Resetme"}</button>
+        <UseEffect/>
         </div>
 
     )
