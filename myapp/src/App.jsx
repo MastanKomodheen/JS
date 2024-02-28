@@ -1,5 +1,6 @@
 import React from "react"
 import Usestate from "./components/Usestate"
+import UserData from "./components/UserData"
 function App() {
   const data =
   {
@@ -65,6 +66,7 @@ function App() {
   return (
 
    <>
+   <UserData/>
     <table>
       <tr>
         <th>Company</th>
