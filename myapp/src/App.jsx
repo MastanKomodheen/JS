@@ -1,6 +1,7 @@
-import React from "react"
+import React, { Suspense, lazy } from "react"
 import Usestate from "./components/Usestate"
-import UserData from "./components/UserData"
+// import UserData from "./components/UserData"
+import Loading from "./components/Loading";
 function App() {
   const data =
   {
@@ -63,10 +64,13 @@ function App() {
       }
     ]
   }
+  const LserLazy=lazy(()=>wait(3000).then(()=>import ("./components/Usestate")));
   return (
 
    <>
-   <UserData/>
+  <Suspense fallback={<Loading/>}>
+  <LserLazy/>
+  </Suspense>
     <table>
       <tr>
         <th>Company</th>
@@ -91,6 +95,11 @@ function App() {
     <Usestate/>
    </>
   )
+}
+function wait(time){
+  return new Promise(resolve=>{
+    setTimeout(resolve,time)
+  })
 }
 
 export default App
