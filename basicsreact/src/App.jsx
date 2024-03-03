@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react"
 import Usestate from "./components/Usestate"
 // import UserData from "./components/UserData"
 import Loading from "./components/Loading";
+import { Link } from "react-router-dom";
 function App() {
   const data =
   {
@@ -68,6 +69,9 @@ function App() {
   return (
 
    <>
+   <Link to="/home">Home</Link>
+   <br />
+   <Link to="/Books">Books</Link>
   <Suspense fallback={<Loading/>}>
   <LserLazy/>
   </Suspense>
